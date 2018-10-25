@@ -212,14 +212,14 @@ contract Ownable {
 contract Nebeus is StandardToken, Ownable {
     
 
-  string public constant name = "Nebeus token";
-  string public constant symbol = "NBTK";
-  uint8 public constant decimals = 0;
+  string public constant name = "Nbtk Loan";
+  string public constant symbol = "NBTLN";
+  uint8 public constant decimals = 9;
   
   
-  uint256 public constant INITIAL_SUPPLY = 50 * (10 ** 6);
+  uint256 public constant INITIAL_SUPPLY = 100 * (10 ** 9);
   
-  uint public constant weiPerToken = uint(1 ether) / 300;
+  uint public constant weiPerToken = uint(1 ether) / (10 ** 9);
   
   uint public constant tokenPrice = weiPerToken;
   
