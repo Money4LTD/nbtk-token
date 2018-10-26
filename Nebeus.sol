@@ -217,9 +217,9 @@ contract Nebeus is StandardToken, Ownable {
   uint8 public constant decimals = 9;
   
   
-  uint256 public constant INITIAL_SUPPLY = 100 * (10 ** 9);
+  uint256 public constant INITIAL_SUPPLY = 100000000000 * (10 ** decimals);
   
-  uint public constant weiPerToken = uint(1 ether) / (10 ** 9);
+  uint public constant weiPerToken = uint(1 ether) / (10 ** decimals);
   
   uint public constant tokenPrice = weiPerToken;
   
